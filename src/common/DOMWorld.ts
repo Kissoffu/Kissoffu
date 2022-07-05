@@ -547,11 +547,7 @@ export class DOMWorld {
     const {updatedSelector, queryHandler} =
       getQueryHandlerAndSelector(selector);
     assert(queryHandler.waitFor, 'Query handler does not support waiting');
-    return (await queryHandler.waitFor(
-      this,
-      updatedSelector,
-      options
-    )) as ElementHandle<NodeFor<Selector>> | null;
+    return queryHandler.waitFor(this, updatedSelector, options);
   }
 
   // If multiple waitFor are set up asynchronously, we need to wait for the

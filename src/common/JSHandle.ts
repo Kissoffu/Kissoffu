@@ -23,8 +23,6 @@ import {MouseButton} from './Input.js';
 import {releaseObject, valueFromRemoteObject, createJSHandle} from './util.js';
 import type {ElementHandle} from './ElementHandle.js';
 
-declare const __JSHandleSymbol: unique symbol;
-
 /**
  * @public
  */
@@ -70,11 +68,6 @@ export interface BoundingBox extends Point {
  * @public
  */
 export class JSHandle<T = unknown> {
-  /**
-   * Used for nominally typing {@link JSHandle}.
-   */
-  [__JSHandleSymbol]?: T;
-
   #client: CDPSession;
   #disposed = false;
   #context: ExecutionContext;

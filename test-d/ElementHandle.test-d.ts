@@ -68,7 +68,7 @@ declare const handle: ElementHandle;
     await handle.$eval(
       'some-element',
       (element, value) => {
-        expectType<Element>(element);
+        expectType<Node>(element);
         return value;
       },
       1
