@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.1.1](https://github.com/puppeteer/puppeteer/compare/v16.1.0...v16.1.1) (2022-08-11)
+
+
+### Bug Fixes
+
+* make sure there is a check for targets when timeout=0 ([#8765](https://github.com/puppeteer/puppeteer/issues/8765)) ([c23cdb7](https://github.com/puppeteer/puppeteer/commit/c23cdb73a7b113c1dd29f7e4a7a61326422c4080)), closes [#8763](https://github.com/puppeteer/puppeteer/issues/8763)
+* resolve navigation flakiness ([#8768](https://github.com/puppeteer/puppeteer/issues/8768)) ([2580347](https://github.com/puppeteer/puppeteer/commit/2580347b50091d172b2a5591138a2e41ede072fe)), closes [#8644](https://github.com/puppeteer/puppeteer/issues/8644)
+* specify Puppeteer version for Chromium 105.0.5173.0 ([#8766](https://github.com/puppeteer/puppeteer/issues/8766)) ([b5064b7](https://github.com/puppeteer/puppeteer/commit/b5064b7b8bd3bd9eb481b6807c65d9d06d23b9dd))
+* use targetFilter in puppeteer.launch ([#8774](https://github.com/puppeteer/puppeteer/issues/8774)) ([ee2540b](https://github.com/puppeteer/puppeteer/commit/ee2540baefeced44f6b336f2b979af5c3a4cb040)), closes [#8772](https://github.com/puppeteer/puppeteer/issues/8772)
+
 ## [16.1.0](https://github.com/puppeteer/puppeteer/compare/v16.0.0...v16.1.0) (2022-08-06)
 
 
